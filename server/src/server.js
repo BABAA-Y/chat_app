@@ -4,6 +4,7 @@ dotenv.config();
 const express = require('express');
 const pool = require('./database/db');
 const userRoutes = require('./routes/userRoutes');
+const chatRoutes = require('./routes/chatRoutes');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -13,6 +14,7 @@ app.use(express.json());
 
 // Mount feature routes
 app.use('/api/users', userRoutes);
+app.use('/api/chat', chatRoutes);
 
 // Root health check
 app.get('/', (req, res) => {
