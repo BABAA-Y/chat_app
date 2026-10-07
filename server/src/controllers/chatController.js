@@ -13,7 +13,7 @@ const getOrCreateConversation = async (req, res) => {
     try {
         // 1. Check if conversation already exists
         const [existing] = await pool.query(
-            'SELECT id, created_at from conversations WHERE user_one_id = ? AND user_two_id = ?'
+            'SELECT id, created_at from conversations WHERE user_one_id = ? AND user_two_id = ?',
             [firstUser, secondUser]
         );
 
