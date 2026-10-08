@@ -1,4 +1,4 @@
-```
+```markdown
 # Real-Time Chat Application
 
 A full-stack, real-time messaging platform built with Node.js, Express, MySQL, Socket.io, and React. This application provides instantaneous 1-on-1 chat capabilities with persistent database storage, deterministic conversation routing, and an interactive modern UI styled with Tailwind CSS.
